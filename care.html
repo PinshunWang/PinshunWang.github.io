@@ -26,8 +26,8 @@
 
 <body>
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm px-5 py-3 py-lg-0 sticky-top" style="margin-top: -10%;">
-        <a href="index.html" class="navbar-brand p-0">
+    <nav class="navbar navbar-expand-lg  bg-dark navbar-dark shadow-sm px-5 py-3 py-lg-0 sticky-top" style="margin-top: -10%;">
+        <a href="care.html" class="navbar-brand p-0">
             <h2 class="m-0 text-uppercase text-primary">財團法人基督教</h2>
             <h1 class="m-0 text-uppercase text-primary">聖道兒少福利基金會</h1>
         </a>
@@ -46,9 +46,9 @@
         <div class="navbar-collapse collapse show" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0 pe-4">
                 <a href="service.html" class="nav-item nav-link">最新消息</a>
-                <a href="index.html" class="nav-item nav-link active">關於我們</a>
+                <a href="index.html" class="nav-item nav-link">關於我們</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="structure" data-bs-toggle="dropdown">組織架構</a>
+                    <a href="care.html" class="nav-link dropdown-toggle active" id="structure" data-bs-toggle="dropdown">組織架構</a>
                         <script>
                         // 取得組織架構大標題的元素
                             var structuretitle = document.getElementById('structure');
@@ -60,7 +60,6 @@
                         </script>                
                     <div class="dropdown-menu m-0">
                         <a href="children.html" class="dropdown-item home">聖道兒童之家</a>
-                          
                         <a href="care.html" class="dropdown-item care">社區兒少關懷</a>
                             <ul class="list2">
                                 <li><a href="care.html#aboutcare" class="dropdown-item">關於我們</a></li>
@@ -79,7 +78,6 @@
                         <a href="grass.html" class="dropdown-item welfare">草屯兒少福利園區</a>
                             </ul>   </div> <!--不是多打！勿刪-->
                     </div>
-
                 <a href="donation.html" class="nav-item money rounded-pill btn btn-outline-secondary" style="padding-top: 0.6rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 0.8rem; margin-left: 1rem;margin-top: 2%;height:  50%; font-size: 18px;">我要捐款</a>
             </div>
         </div>
@@ -88,62 +86,53 @@
 
 
     <!-- Hero Start -->
-    <div class="container-fluid bg-primary py-5"  style="margin-bottom: 90px; position: relative;">
-    <img src="img/bg10.jpg" width="100%" height=85%>
-        <div class="container py-5">
-            <div class="row justify-content-start">
-                <div class="col-lg-8 text-center text-lg-start">
-                    <h1 class="display-1 text-dark" style="position:absolute; top: 25%; left: 50%; transform: translate(-50%, -50%)">關於我們</h1>
-                    <div class="pt-2">
-                        <a href="index.html#mission" class="btn btn-outline-secondary rounded-pill py-md-3 px-md-5 mx-2" >願景與使命</a>
-                        <a href="index.html#members" class="btn btn-outline-secondary rounded-pill py-md-3 px-md-5 mx-2" >團隊夥伴</a>
-                        <a href="index.html#annual" class="btn btn-outline-secondary rounded-pill py-md-3 px-md-5 mx-2" >年度報告</a>
-                        <a href="index.html#bigthing" class="btn btn-outline-secondary rounded-pill py-md-3 px-md-5 mx-2" >大事記</a> 
+    <div class="container-fluid bg-primary py-5 bg-course-banner" style="margin-bottom: 90px; position: relative;">
+        <img src="img/community-banner.jpg" width="100%" height="85%">
+            <div class="container py-5">
+                <div class="row justify-content-start">
+                    <div class="col-lg-8 text-center text-lg-start">
+                        <h1 class="display-1 text-dark" style="position:absolute; top: 25%; left: 50%; transform: translate(-50%, -50%)">社區兒少關懷</h1>
+                        <div class="pt-2" >
+                            <a href="care.html#aboutcare" class="btn btn-outline-secondary rounded-pill py-md-3 px-md-3 mx-2">關於我們</a>
+                            <a href="care.html#training" class="btn btn-outline-secondary rounded-pill py-md-3 px-md-3 mx-2">訓練學苑</a>
+                            <a href="care.html#visiting" class="btn btn-outline-secondary rounded-pill py-md-3 px-md-3 mx-2">兒少訪視</a>
+                        <div>
+                            <h2 class="display-1 text-dark"  style="position:relative; top: 370px; left: 50%; transform: translate(-50%, -50%)"></h2>
+                        </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
     <!-- Hero End -->
 
 
     <!-- About Start -->
     <div class="container-fluid py-5">
-        <div class="container py-5" > 
+
+        <div class="container py-5" id="aboutcare"> 
             <div class="row gx-0 mb-3 mb-lg-0">
                 <div class="col-lg-6" style="max-width: 100%;">
                     <div class="bg-primary p-5" >
-                        <img src="img/mission.jpg" width="100%" height=85% id="mission" >
-                        <h1 class="display-5 mb-4" >願景與使命</h1>
-                        <p> 以基督的心為核心，透過各方專業與關懷，傳遞生命價值與多樣性，伴孤苦兒少從破碎走向自由；
-                        <br>以基督信仰為基礎，建立開放工作環境，激發生命與生命的相交與成長，達成身心靈的全人發展。</p>
-                        <a class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">點我了解更多</a>
+                        <h1 class="display-5 mb-4">關於我們</h1>
+                        <h5 style="font-weight: 400;">聖道發展社區兒少關懷工作，源自於對聖道兒童之家的省思，看著孩子從原生家庭中抽離，輾轉流離在各個安置機構之間，相信這不是家長與孩子的本意，而對於安置機構來說，不但要面對不同原生家庭孩子的個性與狀況，試著協助他們重新建立信任與信心，更不用說照顧安置孩子的成本為一般孩子的六倍。
+                        <br><br>因此，這也促使聖道在思考，如何在進到安置機構前，就先讓有潛在風險的家庭與孩子得到支持與幫助，不僅是在物資上的支援，更是心靈上的陪伴，而有鑑於直接服務所能陪伴的層面有限，促使我們也思考與台灣各地兒少社福夥伴的合作形式，「社區兒少」部門也隨之成立..... 
+                        <br><br>在台灣各地有一群願意付上代價的團體，他們因著自身經驗與看見需要，開始了不同地區的兒少服務，這也讓他們能夠第一時間發現當地家庭的現況並給予實質支持，他們帶著滿腔熱血與服務熱忱，在弱勢家庭與孩子上看見自身的責任，進而成為這群家長和孩子的生命避風港，更是扮演安置機構的前哨站，使社會資源能夠得到更妥善運用。 
+                        <br><br>聖道正是看見這群夥伴的生命付出，從2011年開始透過經費補助及定期訪視與深度對話瞭解困難和需要，成為第一線兒少工作者的支持後盾，每年平均與80間社區課輔班、9間高關懷服務單位合作，陪伴約3800名兒童與青少年成長！
+                        </h5>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container py-5"> 
-            <div class="row gx-0 mb-3 mb-lg-0">
-                <div class="col-lg-6" style="max-width: 100%;">
-                    <div class="bg-primary p-5">
-                        <img src="img/members.jpg" width="100%" height=85% id="members">
-                        <h1 class="display-5 mb-4" >團隊夥伴</h1>
-                        <p> 來自不同專業背景的團隊成員們，為了孩子而相聚於此。<br>
-                            我們相信一群人可以走得更遠，期許在相同教養理念之下，發展個人特長一同陪伴孩子前進，<br>
-                            也藉著彼此的生命故事和價值，讓每位孩子都能充滿自信的容顏自由飛翔。</p>
-                        <a class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">點我了解更多</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+
         <div class="container py-5"> 
             <div class="row gx-0 mb-3 mb-lg-0">
                 <div class="col-lg-6" style="max-width: 100%;">
                     <div class="bg-primary p-5" >
-                        <img src="img/annual.jpg" width="100%" height=85% id="annual">
-                        <h1 class="display-5 mb-4" >年度報告</h1>
-                        <p> 歷年服務成果。</p>
-                        <a class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">點我了解更多</a>
+                        <img src="img/course-banner.jpg" width="100%" height=85% id="training">
+                        <h1 class="display-5 mb-4" >訓練學苑</h1>
+                        <p> 聖道服務至今了解到第一線兒少工作者需要深入發展自身專業與能力，因此「訓練學苑」開設多樣化的培訓課程，訓練他們積極傾聽與策略性提問技巧，深化他們的服務內容與品質。</p>
+                        <a href="course.html" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">點我了解更多</a>
                     </div>
                 </div>
             </div>
@@ -152,13 +141,14 @@
             <div class="row gx-0 mb-3 mb-lg-0">
                 <div class="col-lg-6" style="max-width: 100%;">
                     <div class="bg-primary p-5" >
-                        <img src="img/bigthing.jpg" width="100%" height=85% id="bigthing">
-                        <h1 class="display-5 mb-4">大事記</h1>
-                        <p> 歷年重大事蹟。</p>
-                        <a class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">點我了解更多</a>
+                        <img src="img/visiting-banner.jpg" width="100%" height=85% id="visiting">
+                        <h1 class="display-5 mb-4">兒少訪視</h1>
+                        <p> 除了開辦增能課程訓練兒少工作者，我們也會定期前往課輔合作單位訪視，實地接觸並了解兒少工作者與孩童的現況；若有需要，也會提供與課輔合作單位相關資源，給予從單點需求，形成線性的合作與支持。</p>
+                        <a href="visiting.html" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">點我了解更多</a>
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
     <!-- About End -->
@@ -216,6 +206,7 @@
             </div>
         </div>
     </div>
+
     <!-- Footer End -->
 
     <!-- Back to Top -->

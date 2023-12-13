@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Space+Mono&display=swap" rel="stylesheet">
-<link href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@700&family=Space+Mono&display=swap" rel="stylesheet">
+    <link href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
     <meta charset="utf-8">
     <title>財團法人基督教聖道兒少福利基金會</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -24,10 +24,10 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="about-page"> <!--about-page是為了在style.css那邊跟其他頁面做區分(若有需要)-->
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm px-5 py-3 py-lg-0 sticky-top" style="margin-top: -10%;">
-        <a href="index.html" class="navbar-brand p-0">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm px-5 py-3 py-lg-0 sticky-top" style="margin-top: -10%;"> <!--這邊有fixed-top，下方banner要向下調-->
+        <a href="about.html" class="navbar-brand p-0">
             <h2 class="m-0 text-uppercase text-primary">財團法人基督教</h2>
             <h1 class="m-0 text-uppercase text-primary">聖道兒少福利基金會</h1>
         </a>
@@ -42,13 +42,14 @@
                 }
             </style>
         </button>
+    
 
         <div class="navbar-collapse collapse show" id="navbarCollapse">
             <div class="navbar-nav ms-auto py-0 pe-4">
                 <a href="service.html" class="nav-item nav-link">最新消息</a>
-                <a href="index.html" class="nav-item nav-link active">關於我們</a>
+                <a href="index.html" class="nav-item nav-link">關於我們</a>
                 <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" id="structure" data-bs-toggle="dropdown">組織架構</a>
+                    <a href="care.html" class="nav-link dropdown-toggle active" id="structure" data-bs-toggle="dropdown">組織架構</a>
                         <script>
                         // 取得組織架構大標題的元素
                             var structuretitle = document.getElementById('structure');
@@ -60,7 +61,7 @@
                         </script>                
                     <div class="dropdown-menu m-0">
                         <a href="children.html" class="dropdown-item home">聖道兒童之家</a>
-                          
+                            
                         <a href="care.html" class="dropdown-item care">社區兒少關懷</a>
                             <ul class="list2">
                                 <li><a href="care.html#aboutcare" class="dropdown-item">關於我們</a></li>
@@ -79,7 +80,6 @@
                         <a href="grass.html" class="dropdown-item welfare">草屯兒少福利園區</a>
                             </ul>   </div> <!--不是多打！勿刪-->
                     </div>
-
                 <a href="donation.html" class="nav-item money rounded-pill btn btn-outline-secondary" style="padding-top: 0.6rem; padding-bottom: 0.5rem; padding-left: 1rem; padding-right: 0.8rem; margin-left: 1rem;margin-top: 2%;height:  50%; font-size: 18px;">我要捐款</a>
             </div>
         </div>
@@ -88,82 +88,100 @@
 
 
     <!-- Hero Start -->
-    <div class="container-fluid bg-primary py-5"  style="margin-bottom: 90px; position: relative;">
-    <img src="img/bg10.jpg" width="100%" height=85%>
+    <div class="container-fluid bg-primary py-5 bg-foundation2" style="margin-bottom: 90px; position: relative;">
+    <img src="img/foundation2.jpg" width="100%" style="margin-top:200px; position: relative;">
         <div class="container py-5">
             <div class="row justify-content-start">
-                <div class="col-lg-8 text-center text-lg-start">
-                    <h1 class="display-1 text-dark" style="position:absolute; top: 25%; left: 50%; transform: translate(-50%, -50%)">關於我們</h1>
+                <div class="col-lg-8 col-md-3 text-center text-lg-start">
+                    <h1 class="display-1 text-dark" style="position:absolute; top: 20%; left: 50%; transform: translate(-50%, -50%)">組織架構</h1>
                     <div class="pt-2">
-                        <a href="index.html#mission" class="btn btn-outline-secondary rounded-pill py-md-3 px-md-5 mx-2" >願景與使命</a>
-                        <a href="index.html#members" class="btn btn-outline-secondary rounded-pill py-md-3 px-md-5 mx-2" >團隊夥伴</a>
-                        <a href="index.html#annual" class="btn btn-outline-secondary rounded-pill py-md-3 px-md-5 mx-2" >年度報告</a>
-                        <a href="index.html#bigthing" class="btn btn-outline-secondary rounded-pill py-md-3 px-md-5 mx-2" >大事記</a> 
+                        <a href="about.html#children" class="btn btn-outline-secondary rounded-pill py-md-3 px-md-3 mx-2">聖道兒童之家</a>
+                        <a href="about.html#community" class="btn btn-outline-secondary rounded-pill py-md-3 px-md-3 mx-2">社區兒少關懷</a>
+                        <a href="about.html#edu" class="btn btn-outline-secondary rounded-pill py-md-3 px-md-3 mx-2">葉學堂實驗教育機構</a>
+                        <a href="about.html#family" class="btn btn-outline-secondary rounded-pill py-md-3 px-md-3 mx-2">蒲草窩兒少團體家庭</a>
+                        <a href="about.html#grass" class="btn btn-outline-secondary rounded-pill py-md-3 px-md-3 mx-2">草屯兒少福利園區</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Hero End -->
+    <!-- Hero End --> <!--到這裡比index.html多一行是因為下方介紹多一欄(5欄)-->
 
 
     <!-- About Start -->
     <div class="container-fluid py-5">
-        <div class="container py-5" > 
-            <div class="row gx-0 mb-3 mb-lg-0">
-                <div class="col-lg-6" style="max-width: 100%;">
-                    <div class="bg-primary p-5" >
-                        <img src="img/mission.jpg" width="100%" height=85% id="mission" >
-                        <h1 class="display-5 mb-4" >願景與使命</h1>
-                        <p> 以基督的心為核心，透過各方專業與關懷，傳遞生命價值與多樣性，伴孤苦兒少從破碎走向自由；
-                        <br>以基督信仰為基礎，建立開放工作環境，激發生命與生命的相交與成長，達成身心靈的全人發展。</p>
-                        <a class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">點我了解更多</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container py-5"> 
+        <div class="container py-5">
             <div class="row gx-0 mb-3 mb-lg-0">
                 <div class="col-lg-6" style="max-width: 100%;">
                     <div class="bg-primary p-5">
-                        <img src="img/members.jpg" width="100%" height=85% id="members">
-                        <h1 class="display-5 mb-4" >團隊夥伴</h1>
-                        <p> 來自不同專業背景的團隊成員們，為了孩子而相聚於此。<br>
-                            我們相信一群人可以走得更遠，期許在相同教養理念之下，發展個人特長一同陪伴孩子前進，<br>
-                            也藉著彼此的生命故事和價值，讓每位孩子都能充滿自信的容顏自由飛翔。</p>
-                        <a class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">點我了解更多</a>
+                        <img src="img/children-banner.jpg" width="100%" height=85% id="children";>
+                        <h1 class="display-5 mb-4">聖道兒童之家</h1>
+                        <p>「不遺漏任何一位孩子，編織起全方位的兒少服務網」<br>
+                            因為看見受傷的孩子不只單一樣貌，聖道以兒童之家為核心，一路開展多元兒少服務，在陪伴兒少的路上持續向前。</p>
+                        <a href="children.html" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">點我了解更多</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container py-5"> 
+        <div class="container py-5">
             <div class="row gx-0 mb-3 mb-lg-0">
                 <div class="col-lg-6" style="max-width: 100%;">
-                    <div class="bg-primary p-5" >
-                        <img src="img/annual.jpg" width="100%" height=85% id="annual">
-                        <h1 class="display-5 mb-4" >年度報告</h1>
-                        <p> 歷年服務成果。</p>
-                        <a class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">點我了解更多</a>
+                    <div class="bg-primary p-5">
+                        <img src="img/community-banner.jpg" width="100%" height=85% id="community";>
+                        <h1 class="display-5 mb-4">社區兒少關懷</h1>
+                        <p>「共築弱勢兒少的保護傘，陪伴兒少工作者走助人路」
+                        <br>我們是聖道唯一服務兒少工作者的團隊，以社區兒少關懷為初衷，發展出各項專案，
+                        <br>包含定期訪視第一線社區課輔班和高關懷少年輔導單位、辦理兒少工作者培力訓練。</p>
+                        <a href="care.html" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">點我了解更多</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container py-5"> 
+        <div class="container py-5">
             <div class="row gx-0 mb-3 mb-lg-0">
                 <div class="col-lg-6" style="max-width: 100%;">
-                    <div class="bg-primary p-5" >
-                        <img src="img/bigthing.jpg" width="100%" height=85% id="bigthing">
-                        <h1 class="display-5 mb-4">大事記</h1>
-                        <p> 歷年重大事蹟。</p>
-                        <a class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">點我了解更多</a>
+                    <div class="bg-primary p-5">
+                        <img src="img/edu-banner.jpg" width="100%" height=85% id="edu";>
+                        <h1 class="display-5 mb-4">葉學堂實驗教育機構</h1>
+                        <p>「有一群孩子，因著童年創傷，需要的眼光特別不同。」
+                        <br>我們以學習者為中心，強調系統合作來執行個別化的教學計劃，希望每個孩子離開葉學堂後，
+                        <br>能夠建立自尊、自信，具備適應社會的能力，培養調節情緒、人際溝通以及解決問題的能力。</p>
+                        <a href="edu.html" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">點我了解更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="row gx-0 mb-3 mb-lg-0">
+                <div class="col-lg-6" style="max-width: 100%;">
+                    <div class="bg-primary p-5">
+                        <img src="img/family-banner.jpg" width="100%" height=85% id="family";>
+                        <h1 class="display-5 mb-4">蒲草窩兒少團體家庭</h1>
+                        <p>「停止流浪歷程，終止兒少安置現場的困境。」
+                        <br>我們期望，這群有著特殊需求的孩子能在蒲草窩找到棲身之所，並且穩固地居住，直到成年。
+                        <br>更希望在蒲草窩長大的孩子，不單是身心靈找到一個棲身之所，也找到一個幫助自己學習成長的地方。</p>
+                        <a href="family.html" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">點我了解更多</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-5">
+            <div class="row gx-0 mb-3 mb-lg-0">
+                <div class="col-lg-6" style="max-width: 100%;">
+                    <div class="bg-primary p-5">
+                        <img src="img/grass-banner.jpg" width="100%" height=85% id="grass";>
+                        <h1 class="display-5 mb-4">草屯兒少福利園區</h1>
+                        <p>「我們希望打造一個家園，支撐這群墜落邊緣的兒少。」
+                        <br>除了傳承與擴張聖道兒童之家的兒少安置服務，我們也透過親近大自然的照顧場域，
+                        <br>加上社會中各方專業資源的挹注，期許未來能接住更多特殊需求兒少的迫切照顧需求。</p>
+                        <a href="grass.html" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">點我了解更多</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- About End -->
-    
-    
+   
     <!-- Footer Start -->
     <div class="container-fluid bg-black text-light py-5" style="margin-bottom: -10%; position: relative;">
         <div class="container py-5">
@@ -216,6 +234,7 @@
             </div>
         </div>
     </div>
+
     <!-- Footer End -->
 
     <!-- Back to Top -->
